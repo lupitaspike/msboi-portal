@@ -1,6 +1,7 @@
 // MS Boi - Portal do Colaborador
 // Servidor Express principal
 require('dotenv').config();
+require('./utils/auto-seed');
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
