@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#b91c1c" />
+  <title>MS Boi - Painel RH</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .admin-grid { display: grid; gap: 1rem; }
+    @media (min-width: 720px) {
+      .admin-grid { grid-template-columns: 1fr 1fr; }
+      .admin-grid > .full { grid-column: 1 / -1; }
+    }
+    table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    th, td { padding: .5rem; border-bottom: 1px solid var(--border); text-align: left; }
+    th { background: var(--bg); font-weight: 600; font-size: .8rem; color: var(--muted); }
+    .nav-admin { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .nav-admin button { padding: .5rem 1rem; background: white; border: 1.5px solid var(--border);
+      border-radius: 8px; font-weight: 600; }
+    .nav-admin button.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .audit-row { padding: .5rem; border-bottom: 1px solid var(--border); font-size: .8rem; }
+    .audit-row code { background: var(--bg); padding: 1px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

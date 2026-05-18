@@ -1,0 +1,23 @@
+{
+  "name": "msboi-app-backend",
+  "version": "1.0.0",
+  "description": "MS Boi - Portal do Colaborador (PWA). Backend com Express, SQLite, autenticação JWT e logs LGPD.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "seed": "node --no-warnings utils/seed.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
